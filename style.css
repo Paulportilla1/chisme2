@@ -1,0 +1,538 @@
+/* Stle reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: url(../assets/Roboto-Regular.ttf);
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  img:hover, .full-name:hover, .user-name:hover {
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Main Containers */
+  .main-flex-container {
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  .left-flex-container {
+    flex: 1 0 22%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    background:#fff; 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(230, 236, 240);
+  }
+  .center-flex-container {
+   flex: 3 0 45%;
+   background:#fff;
+  }
+  .right-flex-container {
+    flex: 2 0 31%;
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background:#fff;
+    border-left: 1px solid rgb(230, 236, 240);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  
+  /* Left Navigation */
+  .logo i{
+    color: #f21dd2;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .logo i:hover {
+    border-radius: 50%;
+    padding: 1rem;
+  }
+  .nav-links a {
+    font-weight: 750;
+    color: rgba(20, 23, 26, 0.93);
+    padding: 10px 15px;
+  }
+  
+  .current-page a { color: rgb(242, 29, 196);}
+  
+  .nav-links a:hover {
+    background: rgba(29, 161, 242, 0.1);
+    color: #f21d9d;
+    padding: 10px 15px;
+    border-radius: 25px;
+  }
+  .nav-items {
+    margin: 1.2rem 2rem;
+    white-space: nowrap;
+  }
+  .nav-links i {
+    padding-right: 0.5rem;
+  }
+  .nav-links {
+    margin-top: -1rem;
+  }
+  
+  .chisme a {
+    display: block;
+    margin: auto;
+    width: 100%;
+    color: #fff;
+    background: #f21ddd;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 5rem;
+    border-radius: 25px;
+  }
+  .chisme a:hover {
+    color: #fff;
+    background: #d619d0;
+  }
+  
+  .profile-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    align-self: center;
+    padding: 0 0.6rem;
+  }
+  .profile-box:hover {
+    background: rgba(29, 161, 242, 0.1);
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .profile-box img {
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+  }
+  
+  .profile-box .full-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .profile-box .options-icon {
+    color: #39393a;
+    margin-left: 1rem;
+  }
+  
+  .user-name {
+    color: #39393a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+  }
+  
+  /* Main Container */
+  .home {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid rgb(230, 236, 240);
+    color: #39393a;
+    padding: 0.5rem 1rem;
+  }
+  /* home panel */
+  .home h1 {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  .home i {
+    font-size: 1.4rem;
+    color: rgb(242, 29, 196);
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 50%
+  }
+  .home i:hover {
+    background: rgba(29, 161, 242, 0.1);
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Create Tweet box */
+  .post-chisme {
+    background: #fff;
+    border-bottom: 10px solid rgb(230, 236, 240);
+  }
+  .form-group-1 {
+    display: flex;
+    flex-flow: row;
+    padding: 0.3rem 1rem;
+  }
+  .post-chisme img {
+    display: inline-block;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-self: centr; 
+  }
+  
+  .post-chisme input {
+    width: 90%;
+    height: 60px;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  .post-chisme input::placeholder {
+    color: rgba(123, 124, 126, 0.719);
+  }
+  .post-chisme input:focus {
+    outline: none;
+  }
+  .form-group-2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.8rem;
+  }
+  
+  .post-icons {
+    padding-left: 4rem;
+    color: #f21de0;
+  }
+  .post-icons i {
+    padding-right: 10px;
+    font-size: 1.4rem;
+  }
+  .post-icons i:hover {
+    color: #f21d7dc2;
+    cursor: pointer;
+  }
+  .form-group-2 .btn {
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    background: #e2307d;
+    color: #fff;
+    border-radius: 25px;
+    margin-right: 1rem;
+  }
+  .form-group-2 .btn:hover {
+    background: #f21dc4;
+    cursor: pointer;
+    
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  /* User Content */
+  .chisme img {
+    display: block;
+    width: 100%;
+  }
+  .chisme .user-pics img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0.5rem 1rem;
+  }
+  .chisme1 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    font-size: 15px;
+    width: 100%;
+    line-height: 1.75rem;
+    padding-top: 0.5rem;
+    border-bottom: 1px solid rgb(230, 236, 240);
+  }
+  .tweets:hover {
+    background: rgb(245, 248, 250);
+  }
+  .full-name:hover {
+    text-decoration: underline;
+  }
+  .user-content img {
+    border-radius: 20px;
+  }
+  .user-content {
+    font-family: "Roboto";
+    padding-right: 1rem;
+    color: rgb(48, 52, 56);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .user-content a {
+    color: rgb(27, 149, 224);
+  }
+  
+  .user-content-box {
+    display: flex;
+    flex-flow: column nowrap;
+    color: rgb(20, 23, 26);
+  }
+  
+  .user-content-box .user-names {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .user-names .full-name {
+    padding-right: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(20, 23, 26);
+  }
+  .user-names .user-name {
+    padding-right: 10px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: rgb(101, 119, 134);
+  }
+  .time {
+    color: rgb(101, 119, 134);
+  }
+  .user-names i {
+    padding-top: 0.6rem;
+    margin-left: 50%;
+    color: rgb(101, 119, 134);
+  
+  }
+  .content-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 4rem 1rem 0;
+  }
+  
+  .content-icons i {
+    color: rgb(101, 119, 134);
+    font-size: 1rem;
+    cursor: pointer;
+    
+  }
+  .content-icons i:last-child {
+    font-size: 14px;
+  }
+  
+  .content-icons .blue:hover {
+    color: rgba(29, 161,242,1.00);
+  }
+  .content-icons .green:hover {
+    color: rgb(23 191 99);
+  }
+  .content-icons .red:hover {
+    color: rgb(224, 36, 94);
+  }
+  .content-icons .blue:hover {
+    color: rgba(29, 161,242,1.00);
+  }
+  .trending-menu{
+    width: 100%;
+}
+.trending-center{
+    width: 70%;
+    margin: 0 0 0 50px;
+}
+.search{
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    top: 0;
+    background: #ffff;
+    align-items: center;
+    z-index: 1000;
+}
+.search input{
+    width: 100%;
+    height: 40px;
+    margin: 1% 0 0 0;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background: #ebebeb;
+    padding: 0 10px 0 50px;
+    font-size: 15px;
+    color: #454545;
+    letter-spacing: 1px;
+}
+.search span{
+    position: absolute;
+    left: 7%;
+    top: 12px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #454545;
+}
+.trending, .follow{
+    width: 100%;
+    background: #efefef;
+    border-radius: 20px;
+    margin: 0 0 2px 0;
+    overflow: hidden;
+    max-height: 333px;
+}
+.trending:hover, .follow:hover{
+    overflow: auto;
+}
+.header{
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.header p{
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.trends, .persons{
+    width: 100%;
+}
+.trend-msg{
+    margin: 15px 0 0 20px;
+}
+.trend-name{
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+.trend-name p, .trend-whith p{
+font-size: 12px;
+opacity: 0.6;
+}
+.trend-whith{
+    margin: 0 0 20px 0;
+    cursor: pointer;
+}
+.subject p{
+    font-size: 15px;
+    font-weight: 600;
+    text-justify: inter-word;
+    word-wrap: break-word;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+.trend with p a{
+    text-decoration: none;
+    color: #ff00bf;
+}
+.trend with p a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.trend-picture{
+    padding: 20px 0;
+}
+.trend-picture img{ 
+    width: 7px;
+    height: 70px;
+    border-radius: 20px;
+}
+.trend:hover, .person:hover{
+ background: #e8e8e8;   
+}
+.show-more{
+    padding: 20px 20px;
+}
+.show-more a{
+    text-decoration: none;
+    color: #ff00bf;
+}
+.show-more:hover{
+    background: #e8e8e8;
+    border-radius: 0 0 20px 20px;
+}
+.person{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    padding: 10px 0;
+    align-items: center;
+    border-bottom: 1px solid #d4d4d4;
+}
+.person-proflie{
+    padding: 0 0 0 10px;
+}
+.person-proflie img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    opacity: 0.9;
+}
+.person-profile img:hover{
+    opacity: 1;
+}
+.follow-name p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.name h3{
+font-size: 16px;
+}
+.name p{
+    opacity: 0.6;
+    padding: 5px 0 0 0;
+}
+.send-follow-request button{
+    padding: 5px 20px;
+    outline: none;
+    border: 2px solid #ff00bf;
+    color: #ff00bf;
+    border-radius: 20px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.send-follow-request buttpn:hover{
+    background: #d8eeff;
+}
+@media(max-width:1450px){
+  .option span{
+    display: none;
+  }
+  .option button{
+    padding: 10px 10px;
+  }
+  .container{
+    grid-template-columns: 10% 50% 40%;
+  }
+  .option-center{
+    width: 99.6%;
+  }
+  .option-div a i{
+    padding: 0;
+    border-radius: 50%;
+  }
+  .proflie-msg{
+    grid-template-columns: 25% 40% 35%;
+  }
+}
